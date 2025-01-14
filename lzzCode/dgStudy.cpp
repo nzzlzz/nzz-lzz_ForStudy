@@ -11,19 +11,21 @@ int jiecheng(int n)
     return n;
 }
 
-int fibonacci(int n){
-    if(n<=1){
+int fibonacci(int n)
+{
+    if (n <= 1)
+    {
         return 1;
     }
-    n=fibonacci(n-1)+fibonacci(n-2);
+    n = fibonacci(n - 1) + fibonacci(n - 2);
     return n;
 }
 
 int main()
 {
-    int n, i;
+    int n,a,b,c;
     cin >> n;
-    i = fibonacci(n);
-    cout << "last:" << i << endl;
+    hanoi (n,a,b,c);
+//    cout << "last:" << i << endl;
     return 0;
 }
